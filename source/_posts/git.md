@@ -1,5 +1,5 @@
 ---
-title: 同一台电脑git多帐号配置
+title: 同一台电脑git多帐号配置 VPN设置
 
 date: 2018-12-19
 
@@ -45,4 +45,39 @@ Hi catalinaLi! You've successfully authenticated, but GitHub does not provide sh
 ```
 
 如果出现上图结果就说明连接成功，如果不是这样的话就仔细看看第一步哪里做错了。
+
+## git使用vpn
+
+设置
+
+	git config --global http.proxy http://127.0.0.1:1087
+	
+	git config --global https.proxy https://127.0.0.1:1087
+
+
+取消
+
+	git config --global --unset http.proxy
+	git config --global --unset https.proxy
+
+
+也可以在用户目录下直接编辑` .gitconfig `文件
+
+
+	1 [user]
+	  2   name = whuper
+	  3   email = whuper@163.com
+	  4 [http]
+	  5   proxy = http://127.0.0.1:1087
+	  6 [https]
+	  7   proxy = https://127.0.0.1:1087
+	~                                          
+
+> 不过明明看到shadowsocks软件里默认设置的端口号是 1086
+却要用1087才可以访问,还没有弄明白怎么回事
+
+
+
+
+
 
