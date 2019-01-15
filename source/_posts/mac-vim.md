@@ -1,9 +1,9 @@
 ---
+
 title: mac-vim
 date: 2017-03-30
 
 ---
-# mac-vim
 
 ## macvim配置
 
