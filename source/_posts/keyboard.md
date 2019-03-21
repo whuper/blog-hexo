@@ -7,7 +7,7 @@ date: 2019-01-24 17:41:41
 
 
 
-![./images/k1.png](./images/k1.png)
+![/images/k1.png](/images/k1.png)
 
 ## 使用说明书
 
@@ -82,8 +82,8 @@ Toggle(FN + 右 SHIFT) => 右 FN 灯亮起
 返回出厂设定 
 按住 FN + R, 三秒后 Toggle 灯开始闪烁,继续按住 FN + R 直至空格左灯闪了 9 次便会回复出厂设定
 
-![](./images/k2.png)
+![](/images/k2.png)
 
 
 
-![](./images/k3.png)
+![](/images/k3.png)
