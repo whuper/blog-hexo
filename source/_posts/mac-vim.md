@@ -58,7 +58,7 @@ ln -s /Applications/MacVim.app/Contents/MacOS/MacVim /usr/local/bin/mvim
 
 完成！～
 
-\###安装Vundle，在终端输入以下代码即可
+### 安装Vundle，在终端输入以下代码即可
 
 ```
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -100,3 +100,31 @@ $ vim --version |grep clipboard #查看该选项 +clipboard表示选项开启，
 --with-python-config-dir=/usr/lib/python2.6/config \
 --disable-gui --prefix=/opt/local/vim  
 ```
+
+
+----
+
+
+## Vim 正则表达式替换替换 
+
+
+
+删除文本中所有中文字符
+
+:%s/\v[^\x00-\xff]+//g
+
+
+删除行首数字
+
+:%s/^[0-9]\{1,\}//g
+
+删除/后面的字符
+
+:%s/^\/.*$//g
+
+:%s/\/.*$//g
+
+删除包含数字的行
+
+:g/(\d|^P)/d
+g/^P/d 
